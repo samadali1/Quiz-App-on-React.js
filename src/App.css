@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body{
+  margin: 0px; padding: 0px; font-family: 'Poppins'; background-color: #171940;
+}
+.header{
+  font-family:"Oswald";
+  color: white;
+  background-color:	#E24ECA;
+  margin: 0px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+}
+.header>.Loc{
+  border: none;
+  background: none;
+  outline: none;
+  background-color: #171940;
+  font-size: 100%;
+  padding: 10px 0px;
+  border-radius: 10px;
+  width: 15%;
+  font-family: 'Oswald';
+  color: white;
+  
+}
+.header>*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 28px; 
+}
+.startBtn{
+  border: none;
+  background: none;
+  color: #A75753;
+  border: 2px solid #A75753;
+  padding: 14px;
+  border-radius: 10px;
+  width: 25%;
+  margin: 10px auto;
+  font-family: 'Oswald';
+  font-size: 120%;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.startBtn:hover{
+  background-color: #A75753;
+  color: white;
+}
+.introCon{
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+.introCon h1{
+  color:white;
+  
+}
+.quiz{
+  width: 80%;
+  margin: 30px auto;
+  background-color: #24286dcb;
+  padding: 20px;
+  border-radius: 10px;
+}
+.quiz>p{
+  color: white;
+}
+.quiz>.category{
+  font-size: 160%;
+  color: #019078
+}
+.quiz>.otherHeads{
+  color: white;
+  color: #019078;
+  font-family:'Oswald';
+  font-size: 120%;
+}
+.quiz>.line{
+  padding: 1.5px;
+  background-color: #E24ECA;
+}
+.quizBox>p{
+  color: #A75753;
+}
+label{
+  color: white;
+}
+.nextBtn{
+  display: flex;
+  justify-content: flex-end;
+}
+.nextBtn>button,.startAgainBtn{
+  border: none;
+  background: none;
+  outline: none;
+  width: 20%;
+  background-color: #E24ECA;
+  padding: 10px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-family: 'Oswald';
+  color: white;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.nextBtn>button:hover, .startAgainBtn:hover{
+  background-color: #171940;
+}
+.quiz>.resultBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.quiz>.resultBox>*{
+  width: 40%;
+  border: 2px solid #171940;
+  margin: 5px auto;
+  border-radius: 15px;
+}
+.quiz>.resultBox>*>p{
+  color: #A75753;
+}
+.time{
+  text-align: center;
+  color: white;
+  font-family: "Oswald";
+  font-size: 200%;
+}
+.category{
+  font-family: "Oswald"
+}
+.startAgainBtn{
+  width: 30%;
+  margin: 10px auto;
+}
+.loader{
+  color: white;
+  font-size: 140%;
+  text-align: center;
+  margin: 40px auto;
+}
+@media only screen and (max-width:710px){
+  .startBtn{
+    width: 50%;
+    font-size: 100%;
+  }
+  /* .introCon>h1{
+    font-size: 140%;
+  }
+  .introCon>p{
+    font-size: 80%;
+  } */
+}
+@media only screen and (max-width:600px) {
+  .quiz>.resultBox>*{width: 100%;}
+  .startBtn{
+    width: 50%;
+    font-size: 100%;
+  }
+  .header>.Loc{
+    display: none;
+  }
+  .introCon>h1{
+    font-size: 140%;
+  }
+  .introCon>p{
+    font-size: 80%;
+  }
+  .nextBtn>button{
+    width: 30%;
+  }
+  .category{
+    margin-bottom: 0px;
+  }
+  .otherHeads{
+    margin: 10px 0px;
+  }
+  .nextBtn>button{
+    width: 100%;
+  }
+  .startAgainBtn{
+    width: 50%;
+  }
+}
